@@ -34,4 +34,10 @@ def find_pet_by_name(shop, name):
             found_pet = pet
             return pet
 
+def remove_pet_by_name(shop, name):
+    for pet in (shop["pets"]):
+        if name == pet["name"]:
+            shop["pets"].clear() # is this clearing all the entries or just one?
+
+            
 
